@@ -1,0 +1,28 @@
+name: MiningHelmet
+version: '1.0'
+main: com.yourserver.mininghelmet.MiningHelmetPlugin
+api-version: '1.21'
+author: oSmexy
+description: Grants a custom Mining Helmet with permanent Haste and Night Vision while worn.
+
+commands:
+  mininghelmet:
+    description: Gives a Mining Helmet
+    usage: /mininghelmet, /mininghelmet get, /mininghelmet give <player>
+
+# All nodes default to "op" so the plugin works immediately with zero setup.
+# Server owners can grant these to specific ranks via LuckPerms (or any
+# permissions plugin) later on to allow non-OP roles access without opping them.
+permissions:
+  mininghelmet.*:
+    description: Full access to all MiningHelmet commands
+    default: op
+    children:
+      mininghelmet.get: true
+      mininghelmet.give: true
+  mininghelmet.get:
+    description: Allows getting a Mining Helmet for yourself
+    default: op
+  mininghelmet.give:
+    description: Allows giving a Mining Helmet to other players
+    default: op
