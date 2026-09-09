@@ -57,7 +57,9 @@ cd MiningHelmet
 mvn package
 ```
 
-The compiled jar will be at `target/MiningHelmet.jar`. Drop it into your server's `plugins/` folder and restart.
+The compiled jar will be at `target/MiningHelmet.jar`. Drop it into your server's `plugins/` folder and restart. 
+
+You can also view Releases to download the latest version:
 
 > **Note:** Update the `paper-api` version in `pom.xml` to match your actual Paper build before compiling.
 
